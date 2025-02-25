@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="229.0" prefWidth="308.0" spacing="20" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.informes.MainInformeController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Generador de Informes">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Label />
+      <ListView fx:id="listViewArtistas" />
+      <Button fx:id="btnCliente" mnemonicParsing="false" onAction="#handlerInformeClientes" text="Informe Clientes" />
+      <Button fx:id="btnArtista" mnemonicParsing="false" onAction="#handlerInformeArtistas" text="Informe artistas" />
+      <Button fx:id="btnCerrar" mnemonicParsing="false" onAction="#handlerCerrarAplicacion" text="Cerrar Aplicacion" />
+   </children>
+
+</VBox>
